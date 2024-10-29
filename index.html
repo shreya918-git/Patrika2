@@ -187,7 +187,7 @@
     </section>
     <section class="connect-section" id="Social-Handles">
         <h2>Let us know what's on your mind</h2>
-        <form class="connect-form">
+        <form class="connect-form" onsubmit="sendemail(); reset(); return false;">
             <div class="form-group">
                 <label for="first-name">First name *</label>
                 <input type="text" id="first-name" name="first-name" required>
@@ -226,9 +226,8 @@
 </footer>
 
     
-    
-    
-  
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
     <script src="script.js"></script>
     <script>
         const words = ["Travel", "Food", "Fashion", "Business"];
@@ -261,6 +260,19 @@
         }
     
         displayNextWord();
+        function sendemail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "shreyasharma918nds@gmail.com",
+    Password : "shreyands918",
+    To : 'shreyasharma918nds@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert("done"),
+  error => alert("Error: " + error)
+);}
       </script>
     
 </body>
