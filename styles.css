@@ -118,7 +118,8 @@ nav ul li a:hover::after {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-image: url('./images/bridge-land-img-1.jpg');
+    background-image:url("bridge.jpg");
+    /* background-image: url('./images/bridge-land-img-1.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -321,7 +322,7 @@ nav ul li a:hover::after {
     border: 1px solid #333
   }
   .connect-section {
-    background-image: url('./images/36d27a25-3e47-4fd6-9835-f370ed9392da.jpg'); 
+    background-image: url("connect.jpg"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
