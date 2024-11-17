@@ -1,4 +1,7 @@
 <?php
+header("Access-Control-Allow-Origin: https://patrika2.vercel.app");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
 session_start();
 $_SESSION["loggedin"]=false;
 $conn=new mysqli("localhost","root","","project",3306);
